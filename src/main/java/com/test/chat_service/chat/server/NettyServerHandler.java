@@ -39,7 +39,6 @@ public class NettyServerHandler extends SimpleChannelInboundHandler<Object> {
             dealTextWebSocketFrame(ctx, (TextWebSocketFrame) o);
         }else if(o instanceof PingWebSocketFrame){
             //心跳消息处理
-
         }else if(o instanceof CloseWebSocketFrame){
             //断开处理
             try {
